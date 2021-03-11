@@ -1,16 +1,13 @@
-setInterval(function() {
+function addTimeString(time_string, time_unit) {
+    document.getElementsByClassName('date')[0].innerHTML +=
+        (((time_string < 10) ? ('0' + time_string) : (time_string)) + time_unit);
+}
+setInterval(function showTime() {
     var date = new Date();
-    document.getElementsByClassName('date')[0].innerHTML = date.getFullYear() + '年';
-    if ((date.getMonth() + 1) < 10) {
-        document.getElementsByClassName('date')[0].innerHTML += ('0' + (date.getMonth() + 1) + '月');
-    } else {
-        document.getElementsByClassName('date')[0].innerHTML += ((date.getMonth() + 1) + '月');
-    }
-    if (date.getDate() < 10) {
-        document.getElementsByClassName('date')[0].innerHTML += ('0' + date.getDate() + '日&nbsp;&nbsp;');
-    } else {
-        document.getElementsByClassName('date')[0].innerHTML += (date.getDate() + '日&nbsp;&nbsp;');
-    }
+    document.getElementsByClassName('date')[0].innerHTML = null;
+    addTimeString(date.getFullYear(), '年');
+    addTimeString((date.getMonth() + 1), '月');
+    addTimeString(date.getDate(), '日&nbsp;&nbsp;');
     switch (date.getDay()) {
         case 1:
             document.getElementsByClassName('date')[0].innerHTML += '周一&nbsp;&nbsp;&nbsp;&nbsp;';
@@ -33,19 +30,7 @@ setInterval(function() {
         default:
             document.getElementsByClassName('date')[0].innerHTML += '周日&nbsp;&nbsp;&nbsp;&nbsp;';
     }
-    if (date.getHours() < 10) {
-        document.getElementsByClassName('date')[0].innerHTML += ('0' + date.getHours() + ':');
-    } else {
-        document.getElementsByClassName('date')[0].innerHTML += (date.getHours() + ':');
-    }
-    if (date.getMinutes() < 10) {
-        document.getElementsByClassName('date')[0].innerHTML += ('0' + date.getMinutes() + ':');
-    } else {
-        document.getElementsByClassName('date')[0].innerHTML += (date.getMinutes() + ':');
-    }
-    if (date.getSeconds() < 10) {
-        document.getElementsByClassName('date')[0].innerHTML += ('0' + date.getSeconds());
-    } else {
-        document.getElementsByClassName('date')[0].innerHTML += date.getSeconds();
-    }
+    addTimeString(date.getHours(), ':');
+    addTimeString(date.getMinutes(), ':');
+    addTimeString(date.getSeconds(), '');
 }, 1);
