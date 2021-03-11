@@ -159,6 +159,110 @@ body {
     font-size: 16px;
 }
 
+.page .footer .github a::before {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    position: relative;
+    top: 14px;
+    left: 0;
+    background: url(../img/icon.png) no-repeat;
+    background-position: 0px 0;
+    background-size: 480px 270px;
+    content: "";
+}
+
+.page .footer .bilibili_home a::before {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    position: relative;
+    top: 14px;
+    left: 0;
+    background: url(../img/icon.png) no-repeat;
+    background-position: -36px 0;
+    background-size: 480px 270px;
+    content: "";
+}
+
+.page .footer .bilibili_live a::before {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    position: relative;
+    top: 14px;
+    left: 0;
+    background: url(../img/icon.png) no-repeat;
+    background-position: -36px 0;
+    background-size: 480px 270px;
+    content: "";
+}
+
+.page .footer .acfun_home a::before {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    position: relative;
+    top: 14px;
+    left: 0;
+    background: url(../img/icon.png) no-repeat;
+    background-position: -72px 0;
+    background-size: 480px 270px;
+    content: "";
+}
+
+.page .footer .acfun_live a::before {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    position: relative;
+    top: 14px;
+    left: 0;
+    background: url(../img/icon.png) no-repeat;
+    background-position: -72px 0;
+    background-size: 480px 270px;
+    content: "";
+}
+
+.page .footer .tieba a::before {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    position: relative;
+    top: 14px;
+    left: 0;
+    background: url(../img/icon.png) no-repeat;
+    background-position: -108px 0;
+    background-size: 480px 270px;
+    content: "";
+}
+
+.page .footer .mail a::before {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    position: relative;
+    top: 14px;
+    left: 0;
+    background: url(../img/icon.png) no-repeat;
+    background-position: -144px 0;
+    background-size: 480px 270px;
+    content: "";
+}
+
+.page .footer .qq a::before {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    position: relative;
+    top: 14px;
+    left: 0;
+    background: url(../img/icon.png) no-repeat;
+    background-position: -180px 0;
+    background-size: 480px 270px;
+    content: "";
+}
+
 .page .footer li a:hover {
     color: #FFFFFF;
 }
