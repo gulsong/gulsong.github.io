@@ -63,8 +63,8 @@
 	position: absolute;
     content: '';
     display: inline-block;
-    width: 405px;
-    height: 230px;
+    width: 320px;
+    height: 180px;
     background: url(https://raw.githubusercontent.com/gulsong/Store/main/%E6%95%88%E6%9E%9C%E5%B1%95%E7%A4%BA.jpeg) no-repeat;
     background-size: 100% auto;
 	border: 20px solid rgba(0, 0, 0, 0.5);
