@@ -1,0 +1,19 @@
+.page .content {
+    margin-left: 30px;
+}
+
+.page .content li {
+    margin-top: 20px;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.page .content li a {
+    margin-left: 10px;
+    display: inline-block;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.page .content li a:hover {
+    color: #3F3F3F;
+}
