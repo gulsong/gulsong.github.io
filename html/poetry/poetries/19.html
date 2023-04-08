@@ -28,10 +28,31 @@
         <li class="list">
             <a class="title" href="../../favorites/">网站收藏</a>
         </li>
+        <a class="hide_menu" >
+            <hr />
+            <hr />
+            <hr />
+        </a>
     </ul>
+    <div class="menu_list">
+        <a class="title close">×</a>
+        <a class="title" href="../../program/">项目</a>
+        <a class="title" href="../../poetry/">诗</a>
+        <a class="title" href="../../favorites/">网站收藏</a>
+    </div>
     <div class="page">
         <div class="page_header">
             <p class="date"></p>
+            <div class="search">
+                <select id="search_engine">
+                    <option value="baidu">百度</option>
+                    <option value="bing">必应</option>
+                    <option value="sogou">搜狗</option>
+                    <option value="google">谷歌</option>
+                </select>
+                <input type="text" id="search_keywords" placeholder="输入内容"/>
+                <input type="button" id="search_btn" value="搜索" />
+            </div>
         </div>
         <div class="content">
             <h1 class="poetry_title">
@@ -63,7 +84,7 @@
             </p>
         </div>
         <div class="music">
-            <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=190 height=86 src="//music.163.com/outchain/player?type=2&id=1300936430&auto=1&height=66"></iframe>
+            <iframe id="music_box" frameborder="no" border="0" marginwidth="0" marginheight="0" width=190 height=86 src="https://music.163.com/outchain/player?type=2&id=459115010&auto=1&height=66"></iframe>
         </div>
         <div class="footer">
             <ul class="link">
