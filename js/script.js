@@ -1,6 +1,6 @@
 var client_h = document.documentElement.clientHeight || document.body.clientHeight;
 var scroll_h = document.documentElement.scrollHeight || document.body.scrollHeight;
-var footer_h = document.getElementsByClassName('footer')[0].scrollWidth;
+var footer_h = document.getElementsByClassName('footer')[0].scrollHeight;
 let lunarYearArr = [
   0x0b557, //1949
   0x06ca0, 0x0b550, 0x15355, 0x04da0, 0x0a5b0, 0x14573, 0x052b0, 0x0a9a8, 0x0e950, 0x06aa0, //1950-1959
