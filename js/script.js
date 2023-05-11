@@ -1271,24 +1271,30 @@ setInterval(function showTime() {
   if (date.getHours() === 0 && date.getMinutes() === 0 && date.getSeconds() === 0){
     setMusic();
   }
+  if ((document.documentElement.scrollTop || document.body.scrollTop) > 20) {
+    document.getElementsByClassName("top")[0].style.display = "block";
+  } else {
+    document.getElementsByClassName("top")[0].style.display = "none";
+  }
 }, 1);
 var scrollFunc = function(e) {
     e = e || window.event;
     var scroll_Top = document.documentElement.scrollTop || document.body.scrollTop;
     if (e.wheelDelta) {
         if (scroll_Top + client_h >= scroll_h - (footer_h + 20)) {
-            document.getElementsByClassName('music')[0].style.position = "absolute";
-            document.getElementsByClassName('music')[0].style.bottom = "220px";
+            document.getElementsByClassName('parts')[0].style.position = "absolute";
+            document.getElementsByClassName('parts')[0].style.bottom = "220px";
         } else {
-            document.getElementsByClassName('music')[0].style.position = "fixed";
-            document.getElementsByClassName('music')[0].style.bottom = "20px";
+            document.getElementsByClassName('parts')[0].style.position = "fixed";
+            document.getElementsByClassName('parts')[0].style.bottom = "20px";
         }
     }
+    
 }
 window.onmousewheel = document.onmousewheel = scrollFunc;
 document.getElementById("search_btn").onclick = function () {
-    var engine = "https://baidu.com/s?wd=";
-    if (document.getElementById('search_engine').value === "baidu") {
+    var engine = "https://baidu.com/s?wd=";d
+    if (document.getElementById('search_engine').value === "baiu") {
         engine = "https://baidu.com/s?wd=";
     } else if (document.getElementById('search_engine').value === "bing") {
         engine = "https://bing.com/search?q=";
@@ -1309,4 +1315,9 @@ document.getElementsByClassName("hide_menu")[0].onclick = function () {
 }
 document.getElementsByClassName("close")[0].onclick = function () {
   document.getElementsByClassName("menu_list")[0].style.transform='translateX(200px)';
+}
+ 
+document.getElementsByClassName("top")[0].onclick = function () {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
