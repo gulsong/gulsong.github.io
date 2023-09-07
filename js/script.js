@@ -1293,8 +1293,8 @@ var scrollFunc = function(e) {
 }
 window.onmousewheel = document.onmousewheel = scrollFunc;
 document.getElementById("search_btn").onclick = function () {
-    var engine = "https://baidu.com/s?wd=";d
-    if (document.getElementById('search_engine').value === "baiu") {
+    var engine = "https://baidu.com/s?wd=";
+    if (document.getElementById('search_engine').value === "baidu") {
         engine = "https://baidu.com/s?wd=";
     } else if (document.getElementById('search_engine').value === "bing") {
         engine = "https://bing.com/search?q=";
