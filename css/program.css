@@ -26,46 +26,46 @@
     background-clip: padding-box;
 }
 
-#pro1:hover::after {
+.pro1:hover::after {
 	position: absolute;
     content: '';
     display: inline-block;
     width: 180px;
     height: 320px;
-    background: url(https://raw.githubusercontent.com/gulsong/XXNews/main/%E6%95%88%E6%9E%9C%E5%B1%95%E7%A4%BA.jpeg) no-repeat;
+    background: url(../img/program/Movie.jpeg) no-repeat;
     background-size: 100% auto;
 	border: 20px solid rgba(0, 0, 0, 0.5);
 }
 
-#pro2:hover::after {
+.pro2:hover::after {
 	position: absolute;
     content: '';
     display: inline-block;
     width: 180px;
     height: 320px;
-    background: url(https://raw.githubusercontent.com/gulsong/PlaneWars/main/%E6%95%88%E6%9E%9C%E5%B1%95%E7%A4%BA.jpeg) no-repeat;
+    background: url(../img/program/XXNews.jpeg) no-repeat;
     background-size: 100% auto;
 	border: 20px solid rgba(0, 0, 0, 0.5);
 }
 
-#pro3:hover::after {
+.pro3:hover::after {
 	position: absolute;
     content: '';
     display: inline-block;
     width: 180px;
     height: 320px;
-    background: url(https://raw.githubusercontent.com/gulsong/Movie/master/%E6%95%88%E6%9E%9C%E5%B1%95%E7%A4%BA.jpeg) no-repeat;
+    background: url(../img/program/PlaneWars.jpeg) no-repeat;
     background-size: 100% auto;
 	border: 20px solid rgba(0, 0, 0, 0.5);
 }
 
-#pro4:hover::after {
+.pro4:hover::after {
 	position: absolute;
     content: '';
     display: inline-block;
     width: 320px;
     height: 180px;
-    background: url(https://raw.githubusercontent.com/gulsong/Store/main/%E6%95%88%E6%9E%9C%E5%B1%95%E7%A4%BA.jpeg) no-repeat;
+    background: url(../img/program/Store.jpeg) no-repeat;
     background-size: 100% auto;
 	border: 20px solid rgba(0, 0, 0, 0.5);
 }
